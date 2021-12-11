@@ -11,7 +11,7 @@ const birthdayTextRoutes = require(path.join(__dirname ,"routes","birthdayTexts"
 const btext = require(path.join(__dirname ,"models","birthdayTexts"));
 
 mongoose.connect(
-  "mongodb+srv://saipatil1:saipatil@cluster0.86lnj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongodb+srv://saipatil1:saipatil@cluster0.86lnj.mongodb.net/oneStopBirthdayPlanner?retryWrites=true&w=majority",
   () => {
     // const text=new btext({
     //     text:"“Happy birthday! Here’s to more life, love, and adventures with you to come!”",
