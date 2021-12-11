@@ -1,7 +1,7 @@
 const express = require("express");
-
+const path=require("path")
 const router = express.Router();
-const btext = require("../models/birthdayTexts");
+const btext = require(path.join("..","models","birthdayTexts"));
 
 const {
   getAllBirthdayTexts,

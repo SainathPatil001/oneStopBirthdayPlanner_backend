@@ -1,4 +1,5 @@
-const btext = require("../models/birthdayTexts");
+const path=require("path")
+const btext = require(path.join("..","models","birthdayTexts"));
 
 exports.getAllBirthdayTexts = async (req, res, next) => {
   const texts = await btext.find();

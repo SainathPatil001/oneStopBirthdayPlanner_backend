@@ -1,11 +1,17 @@
 const express = require("express");
 const app = express();
-const birthdayTextRoutes = require("./routes/birthdayTexts");
 const mongoose = require("mongoose");
-const btext = require("./models/birthdayTexts");
+const path=require("path")
+var cors = require('cors')
+
+app.use(cors())
+
+
+const birthdayTextRoutes = require(path.join(__dirname ,"routes","birthdayTexts"));
+const btext = require(path.join(__dirname ,"models","birthdayTexts"));
 
 mongoose.connect(
-  "mongodb://localhost/oneStopBirthdayPlanner",
+  "mongodb+srv://<saipatil1>:<saipatil>@cluster0.86lnj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   () => {
     // const text=new btext({
     //     text:"“Happy birthday! Here’s to more life, love, and adventures with you to come!”",
